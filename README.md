@@ -1,1 +1,2 @@
-# GB_Java_Junior
+option + shift -  Переместить строку вниз или вверх
+command + shift - Переместить метод вниз или вверх
