@@ -15,11 +15,11 @@ public class Example {
 //        ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
 //        objectOutputStream.writeObject(serializablePerson);
 //        objectOutputStream.close();
-
 //        SerializablePerson dmitrii = new SerializablePerson("Dmitrii");
         Path path = Path.of("output.txt");
         ObjectInputStream objectInputStream = new ObjectInputStream(Files.newInputStream(path));
         Object deserialized = objectInputStream.readObject();
         System.out.println(deserialized);
+        objectInputStream.close();
     }
 }
